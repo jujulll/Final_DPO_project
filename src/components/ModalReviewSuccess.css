@@ -1,0 +1,55 @@
+.msg-review-overlay {
+  
+  position: fixed;
+  inset: 0;
+  background: #55555573;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.msg-review-box {
+  background: #E7F5DE;
+  border-radius: 24px;
+  padding: 80px 0 40px 0;
+  width: 100%;
+  max-width: 1064px;
+  position: relative;
+  text-align: center;
+}
+
+.msg-review-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #243221;
+}
+
+.msg-review-title {
+  font-family: 'Comic Cat';
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 64px;
+  color: #243221;
+}
+
+.msg-review-text {
+  font-size: 24px;
+  color: #243221;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  .msg-review-box {
+    padding: 28px 20px;
+  }
+  .msg-review-title {
+    font-size: 22px;
+  }
+}

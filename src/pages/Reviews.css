@@ -1,0 +1,249 @@
+.reviews-page {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.section {
+  padding-top: 0px;
+}
+
+.reviews-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #243221;
+}
+
+.reviews-breadcrumb a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243221;
+}
+
+.reviews-breadcrumb-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.reviews-breadcrumb a:hover {
+  color: #4a7042;
+}
+
+.reviews-page h1 {
+  margin-bottom: 64px;
+}
+
+/* Слайдер отзывов */
+.reviews-slider {
+  margin-bottom: 60px;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.review-card {
+  width: 630px;
+  height: 309px;
+  border: 2px solid #243221;
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-info {
+  flex: 1;
+}
+
+.review-name {
+  font-family: 'Comic Cat';
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #243221;
+}
+
+.review-city {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 24px;
+  color: #243221;
+}
+
+.review-rating {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.review-text {
+  font-size: 24px;
+  color: #243221;
+  line-height: 130%;
+}
+
+/* Навигация слайдера */
+.reviews-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews-dots {
+  display: flex;
+  gap: 15px;
+}
+
+.reviews-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #A6BDA0;
+  border: none;
+  cursor: pointer;
+}
+
+.reviews-dot.active {
+  width: 45px;
+  border-radius: 64px;
+  background-color: #243221;
+}
+
+.reviews-arrows {
+  display: flex;
+  gap: 32px;
+}
+
+.reviews-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.reviews-arrow img {
+  width: 40px;
+  height: 40px;
+}
+
+.reviews-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Форма отзыва */
+.review-form-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.review-form-left {
+  flex: 1;
+}
+
+.review-form-title {
+  font-family: 'Comic Cat';
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 54px;
+}
+
+.review-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  margin-left: 28px;
+}
+
+.review-stars img {
+  width: 24px;
+  height: 24px;
+  background-color: #F8FEF0;
+}
+
+.review-star.active {
+  color: #243221;
+}
+
+.review-textarea {
+  width: 630px;
+  padding: 16px;
+  border: 2px solid #243221;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  color: #243221BF;
+  font-weight: 400;
+  min-height: 97px;
+  margin-bottom: 28px;
+  background-color: transparent;
+}
+
+.review-submit-btn {
+  width: 100%;
+  height: 56px;
+  background-color: #243221;
+  color: #E7F5DE;
+  border-radius: 12px;
+  border: 2px solid;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+.review-submit-btn:hover {
+  background-color: #1a251a00;
+  border: 2px solid #243221;
+  color: #243221;
+}
+
+.review-form-right {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.review-form-right img {
+  width: 630px;
+  height: 348px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+  .review-form-section {
+    flex-direction: column;
+  }
+}

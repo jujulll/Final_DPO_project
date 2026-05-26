@@ -1,0 +1,109 @@
+.product-page {
+  padding-top: 80px;
+}
+
+.product-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 64px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #243221;
+}
+
+.product-breadcrumb a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243221;
+}
+
+.product-breadcrumb-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+.product-breadcrumb a:hover {
+  color: #4a7042;
+}
+
+.product-detail {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 60px;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.product-thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-thumbnails img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.product-thumbnails img.active {
+  border-color: #243221;
+}
+
+.product-main-img {
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+.product-main-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info h1 {
+  font-family: 'Comic Cat';
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #243221;
+}
+
+.product-info-desc {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 24px;
+  color: #243221;
+  max-width: 630px;
+  margin-bottom: 28px;
+}
+
+.product-info-price {
+  font-family: 'Comic Cat';
+  font-size: 32px;
+  font-weight: 400;
+  color: #243221;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 900px) {
+  .product-detail {
+    flex-direction: column;
+  }
+}

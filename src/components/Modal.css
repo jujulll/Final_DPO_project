@@ -1,0 +1,144 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: #55555573;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-box {
+  background: #E7F5DE;
+  border-radius: 24px;
+  padding: 40px 217px;
+  width: 100%;
+  max-width: 1064px;
+  position: relative;
+  text-align: center;
+}
+
+/* Крестик */
+.modal-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #243221;
+}
+
+.modal-title {
+  font-family: 'Comic Cat';
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 64px;
+  color: #243221
+}
+
+.auth-form {
+  text-align: left;
+}
+
+.auth-field {
+  margin-bottom: 28px;
+}
+
+.auth-field label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #243221;
+  margin-bottom: 12px;
+}
+
+.auth-field input {
+  width: 100%;
+  padding: 26px 28px;
+  border: 2px solid #243221;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.auth-field input:focus {
+  border-color: #2c3328;
+}
+
+/* Кнопка */
+.auth-btn {
+  width: 100%;
+  padding: 18px;
+  background: #243221;
+  color: #E7F5DE;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.auth-btn:hover {
+  border: 2px solid #243221;
+  background-color: transparent;
+  color: #243221;
+}
+
+/* Примечание под кнопкой */
+.auth-note {
+  font-size: 16px;
+  font-weight: 700;
+  color: #243221;
+  margin-top: 20px;
+  line-height: 130%;
+}
+
+.auth-switch {
+  margin-top: 40px;
+  font-size: 24px;
+  color: #243221;
+  font-weight: 700;
+}
+
+.auth-link {
+  background: none;
+  border: none;
+  color: #243221;
+  text-decoration: none;
+  border-bottom: 2px solid #243221;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.modal-text {
+  font-size: 24px;
+  color: #243221;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  .modal-box {
+    padding: 28px 20px;
+  }
+  .modal-title {
+    font-size: 22px;
+  }
+}
+
+/* Адаптив */
+@media (max-width: 500px) {
+  .modal-box {
+    padding: 28px 20px;
+  }
+  .modal-title {
+    font-size: 22px;
+  }
+}
