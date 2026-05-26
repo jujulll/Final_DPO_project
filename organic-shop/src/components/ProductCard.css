@@ -1,0 +1,57 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 305px;
+  margin-bottom: 40px;
+}
+
+.product-card img {
+  width: 305px;
+  height: 305px;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 28px;
+
+}
+
+.product-title {
+  font-family: 'Comic Cat';
+  font-size: 32px;
+  font-weight: 400;
+  color: #243221;
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 305px;
+  color: #243221;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-family: 'Comic Cat';
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.product-btn {
+  background-color: #243221;
+  color: #E7F5DE;
+  width: 159px;
+  height: 56px;
+  border-radius: 64px;
+  font-size: 20px;
+  font-weight: 500;
+  align-self: flex-start;
+  transition: background-color 0.2s;
+  border: 2px solid;
+}
+
+.product-btn:hover {
+  background-color: #1a251a00;
+  color: #243221;
+}
