@@ -1,10 +1,6 @@
 {
   "name": "organic-shop",
-<<<<<<< HEAD
   "homepage": "...",
-=======
-  "homepage": "https://jujullll.github.io/Final_DPO_project",
->>>>>>> 248b5ed50072ae337224f8ad9a48d00c9a459f96
   "version": "0.1.0",
   "private": true,
   "dependencies": {
