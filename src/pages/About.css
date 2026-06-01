@@ -25,15 +25,48 @@
 }
 
 /* На телефоне блоки становятся в колонку */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .about-content {
+    margin-top: 40px;
+  }
+
+  .about-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: start;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  .about-text p {
+    font-size: 20px;
+    line-height: 130%;
+    color: #243221;
+    margin-bottom: 20px;
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+  }
+}
+@media (max-width: 576px) {
   .about-row {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 0px;
   }
   /* Картинка вверху, текст под ней */
   .about-row.reverse .about-image {
-    order: -1;
+    order: 1;
   }
+
+  .about-row.reverse {
+    margin-bottom: 0px;
+  }
+
   .about-text p {
     font-size: 16px;
   }

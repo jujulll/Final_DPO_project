@@ -10,6 +10,7 @@ import Cart from './pages/Cart';
 import Reviews from './pages/Reviews';
 import Delivery from './pages/Delivery';
 import About from './pages/About'
+import Contacts from './pages/Contacts';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </main>
       <Footer />

@@ -196,7 +196,6 @@
   padding: 16px;
   border: 2px solid #243221;
   border-radius: 12px;
-  font-size: 15px;
   font-family: 'Inter Tight', sans-serif;
   font-size: 20px;
   color: #243221BF;
@@ -221,9 +220,7 @@
 }
 
 .review-submit-btn:hover {
-  background-color: #1a251a00;
-  border: 2px solid #243221;
-  color: #243221;
+  background-color: #2D4728;
 }
 
 .review-form-right {
@@ -239,11 +236,174 @@
   border-radius: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+  .reviews-breadcrumb {
+    margin-top: 80px;
+    font-weight: 400;
+  }
+
+  .reviews-breadcrumb a {
+    gap: 15px;
+  }
+
+  .reviews-page {
+    padding: 0px 20px;
+  }
+
+  .reviews-list {
+    gap: 15px;
+    margin-bottom: 24px;
+  }
+
+  .review-card {
+    width: 572px;
+    height: 280px;
+  }
+
+  .review-name {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .review-city {
+    font-size: 20px;
+  }
+
+  .review-rating {
+    font-size: 20px;
+  }
+
+  .review-text {
+    font-size: 20px;
+  }
+
+  /* Навигация слайдера */
+  .reviews-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviews-dots {
+    display: flex;
+    gap: 10px;
+  }
+
+  .reviews-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #A6BDA0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .reviews-dot.active {
+    width: 35px;
+  }
+
+  .reviews-arrows {
+    display: flex;
+    gap: 20px;
+  }
+
+  .reviews-arrow img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Форма отзыва */
+  .review-form-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+
+  .review-form-left {
+    flex: 1;
+  }
+
+  .review-form-title {
+    font-size: 58px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (max-width: 576px) {
   .reviews-list {
     grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 24px;
   }
   .review-form-section {
     flex-direction: column;
+  }
+
+  .reviews-page {
+    padding: 0 12px;
+  }
+  
+  .reviews-page h1{
+    margin-bottom: 30px;
+  }
+  .reviews-breadcrumb {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .reviews-breadcrumb a {
+    gap: 15px;
+  }
+
+  .review-card {
+    width: 351px;
+    height: 280px;
+  }
+
+  .review-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .review-city {
+    font-size: 18px;
+  }
+
+  .review-rating {
+    font-size: 20px;
+  }
+
+  .review-text {
+    font-size: 18px;
+  }
+
+  /* Форма отзыва */
+  .review-form-section {
+    gap: 20px;
+    margin-bottom: 0px;
+    margin-top: 60px;
+  }
+
+  .review-form-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .review-stars {
+    margin-left: 15px;
+  }
+
+  .review-textarea {
+    width: 351px;
+    font-size: 16px;
+    min-height: 97px;
+    margin-bottom: 20px;
+  }
+
+  .review-submit-btn {
+    font-size: 18px;
   }
 }

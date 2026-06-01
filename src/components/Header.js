@@ -9,6 +9,7 @@ function Header() {
   const [searchText, setSearchText] = useState('');
   const [cartCount, setCartCount] = useState(getCartCount());
   const [authOpen, setAuthOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // ← бургер-меню
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -37,6 +38,10 @@ function Header() {
     }
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <header className="header">
@@ -46,12 +51,13 @@ function Header() {
               <img src="/images/logo.svg" alt="Organic" className="logo-img" />
             </Link>
 
-            <nav className="nav">
+            {/* Десктопное меню */}
+            <nav className="nav desktop-nav">
               <Link to="/catalog">Каталог</Link>
               <Link to="/delivery">Доставка и оплата</Link>
               <Link to="/about">О нас</Link>
               <Link to="/reviews">Отзывы</Link>
-              <Link to="/">Контакты</Link>
+              <Link to="/contacts">Контакты</Link>
             </nav>
           </div>
 
@@ -78,7 +84,25 @@ function Header() {
               <img src="/images/cart.svg" alt="Корзина" />
               {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
             </Link>
+
+            {/* Бургер-кнопка */}
+            <button className="burger-btn" onClick={toggleMenu}>
+              <span className={`burger-line ${menuOpen ? 'open' : ''}`}></span>
+              <span className={`burger-line ${menuOpen ? 'open' : ''}`}></span>
+              <span className={`burger-line ${menuOpen ? 'open' : ''}`}></span>
+            </button>
           </div>
+        </div>
+
+        {/* Мобильное меню */}
+        <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+          <nav className="mobile-nav">
+            <Link to="/catalog" onClick={() => setMenuOpen(false)}>Каталог</Link>
+            <Link to="/delivery" onClick={() => setMenuOpen(false)}>Доставка и оплата</Link>
+            <Link to="/about" onClick={() => setMenuOpen(false)}>О нас</Link>
+            <Link to="/reviews" onClick={() => setMenuOpen(false)}>Отзывы</Link>
+            <Link to="/contacts" onClick={() => setMenuOpen(false)}>Контакты</Link>
+          </nav>
         </div>
       </header>
 

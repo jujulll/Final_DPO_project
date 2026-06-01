@@ -44,11 +44,21 @@
   margin-top: 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .msg-box {
     padding: 28px 20px;
   }
   .msg-title {
-    font-size: 22px;
+    font-size: 32px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .msg-text {
+    font-size: 18px;
+  }
+  .msg-close {
+    top: 20px;
+    right: 20px;
   }
 }

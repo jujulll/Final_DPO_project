@@ -15,7 +15,7 @@ function Footer() {
           <Link to="/delivery">Доставка и оплата</Link>
           <Link to="/about">О нас</Link>
           <Link to="/reviews">Отзывы</Link>
-          <Link to="/">Контакты</Link>
+          <Link to="/contacts">Контакты</Link>
         </nav>
 
         <div className="footer-socials">

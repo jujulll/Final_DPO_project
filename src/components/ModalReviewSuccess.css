@@ -45,11 +45,21 @@
   margin: 20px 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .msg-review-box {
     padding: 28px 20px;
   }
   .msg-review-title {
-    font-size: 22px;
+    font-size: 32px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .msg-review-text {
+    font-size: 18px;
+  }
+  .msg-review-close {
+    top: 20px;
+    right: 20px;
   }
 }

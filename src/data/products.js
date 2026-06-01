@@ -6,7 +6,7 @@ export const products = [
   { id: 4, category: 'fruits', image: '/images/15.png', title: 'Персики', description: 'Бархатные, сладкие', price: 150, fullDesc: 'Бархатные персики с нежной сладкой мякотью. Тают во рту и наполняют летним ароматом.' },
   { id: 5, category: 'fruits', image: '/images/16.png', title: 'Мандарины', description: 'Сочные, легко чистятся', price: 100, fullDesc: 'Сочные мандарины с тонкой кожурой. Легко чистятся и радуют сладким вкусом.' },
   { id: 6, category: 'fruits', image: '/images/17.png', title: 'Яблоки', description: 'Хрустящие, с лёгкой кислинкой', price: 110, fullDesc: 'Хрустящие яблоки с лёгкой кислинкой. Собраны в экологичных садах без химии.' },
-  { id: 7, category: 'fruits', image: '/images/11.png', title: 'Груши', description: 'Медовая и тающая во рту', price: 120, fullDesc: 'Медовые груши, тающие во рту. Нежная текстура и насыщенный аромат.' },
+  { id: 7, category: 'fruits', image: '/images/11.png', title: 'Груши', description: 'Медовая и тающая', price: 140, fullDesc: 'Медовые груши, тающие во рту. Нежная текстура и насыщенный аромат.' },
 
   // Овощи
   { id: 8, category: 'vegetables', image: '/images/7.png', title: 'Томаты', description: 'Сочные, мясистые', price: 140, fullDesc: 'Сочные мясистые томаты с насыщенным вкусом. Идеальны для салатов и соусов.' },

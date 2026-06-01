@@ -1,45 +1,97 @@
 .footer {
-    background-color: #E7F5DE;
-    padding: 30px 0px;
-    margin-top: auto;
+  background-color: #E7F5DE;
+  padding: 30px 0px;
+  margin-top: auto;
 }
 
 .footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
 }
 
 .footer-logo img {
-    width: 138px;
-    height: 40px;
+  width: 138px;
+  height: 40px;
 }
 
 .footer-nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .footer-nav a {
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #243221;
-    transition: color 0.2s;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #243221;
+  transition: color 0.2s;
 }
 
 .footer-nav a:hover {
-    color: #2D3B2D;
+  color: #2D3B2D;
 }
 
 .footer-socials {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .footer-socials img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 30px 20px;
+  }
+}
+
+/* ===== МОБИЛКА 576px ===== */
+@media (max-width: 576px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer .container {
+    display: grid;
+    grid-template-columns: 1fr auto;  /* меню слева, соцсети справа */
+    grid-template-rows: auto auto;    /* две строки */
+    gap: 30px 20px;
+    padding-top: 40px;
+    align-items: start;
+  }
+
+  /* Меню — левая колонка */
+  .footer-nav {
+    grid-column: 1;
+    grid-row: 1;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Соцсети — правая колонка */
+  .footer-socials {
+    grid-column: 2;
+    grid-row: 1;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-socials img {
+    width: 40px;
+    height: 40px;
+    }
+
+  /* Логотип — по центру, внизу */
+  .footer-logo {
+    grid-column: 1 / -1;  /* на всю ширину */
+    grid-row: 2;
+    justify-self: center;
+    margin-top: 15px;  /* центрируем */
+  }
+
 }

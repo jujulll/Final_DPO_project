@@ -85,9 +85,7 @@
   letter-spacing: 0.5px;
 }
 .auth-btn:hover {
-  border: 2px solid #243221;
-  background-color: transparent;
-  color: #243221;
+  background-color: #2D4728;
 }
 
 /* Примечание под кнопкой */
@@ -124,21 +122,63 @@
   margin: 20px 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   .modal-box {
-    padding: 28px 20px;
+    padding: 30px 30px;
   }
   .modal-title {
-    font-size: 22px;
+    font-size: 58px;
   }
 }
 
 /* Адаптив */
-@media (max-width: 500px) {
+@media (max-width: 576px) {
+  .modal-overlay {
+    padding: 0px;
+  }
   .modal-box {
-    padding: 28px 20px;
+    padding: 30px 12px;
+    max-width: 351px;
   }
   .modal-title {
-    font-size: 22px;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .modal-close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .auth-field input {
+    font-size: 16px;
+    height: 52px;
+    font-weight: 600;
+  }
+
+  .auth-btn {
+    height: 52px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .auth-field label {
+    font-size: 18px;
+  }
+
+  .auth-note {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .auth-switch {
+    font-size: 20px;
+  }
+
+  .auth-link {
+    font-size: 20px;
+  }
+  .modal-text {
+    font-size: 18px;
   }
 }

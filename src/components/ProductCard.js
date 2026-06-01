@@ -5,9 +5,11 @@ import './ProductCard.css';
 
 function ProductCard({ id, image, title, description, price }) {
   return (
-    <div className="product-card">
+    <div className="product-card animate__animated animate__fadeInUp">
       <Link to={`/product/${id}`} className="product-card-link">
-        <img src={image} alt={title} />
+        <div className="product-image-wrapper">
+          <img src={image} alt={title} />
+        </div>
         <h3 className="product-title">{title}</h3>
         <p className="product-desc">{description}</p>
         <div className="product-price">{price} ₽</div>

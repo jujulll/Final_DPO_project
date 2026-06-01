@@ -20,12 +20,12 @@ function QuestionForm() {
         </p>
 
         <form className="question-form" onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form-group2">
             <label>Имя и фамилия</label>
             <input type="text" placeholder="Введите имя и фамилию" required />
           </div>
 
-          <div className="form-group">
+          <div className="form-group2">
             <label>Почта</label>
             <input type="email" placeholder="Введите почту" required />
           </div>

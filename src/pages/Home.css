@@ -60,8 +60,7 @@
 }
 
 .hero-btn:hover {
-  color: #243221;
-  background-color: #1a251a00;
+  background-color: #2D4728;
 }
 
 /* Секции товаров */
@@ -131,21 +130,135 @@
 }
 
 /* Адаптив */
-@media (max-width: 900px) {
-  .hero .container {
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .hero {
+    min-height: 670px;
   }
+
+  .hero-text {
+    padding: 60px 20px;
+  }
+
   .hero-title {
-    font-size: 42px;
+    font-size: 84px;
+    margin-bottom: 28px;
   }
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  /* Секции товаров */
+  .products-section {
+    padding: 60px 0;
   }
-  .products-grid.three {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
+
+  .section-title {
+    font-size: 58px;
+    margin-bottom: 42px;
   }
-  .why-images {
-    grid-template-columns: 1fr;
+
+  /* Почему мы */
+  .why-grid {
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .why-text-block {
+    font-size: 20px;
+    max-width: 570px;
+    margin-bottom: 28px;
+  }
+
+  .why-img-large {
+    width: 570px;
+    height: 520px;
+  }
+
+  .why-img-small {
+    width: 570px;
+    height: 400px;
+  }
+}
+
+/* ===== МОБИЛЬНЫЕ УСТРОЙСТВА (375px) ===== */
+@media (max-width: 576px) {
+  .hero {
+    min-height: 723px;
+  }
+
+  .hero-bg {
+    width: 378px;
+    height: 378px;
+    border-radius: 200px;
+    margin-left: 40px;
+    margin-top: 32px;
+  }
+
+  .hero-text {
+    max-width: 375px;
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    margin-bottom: 23px;
+    margin-top: 390px;
+    margin-left: 12px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 350px;
+    text-align: center;
+    margin-left: 12px;
+  }
+
+  .hero-btn {
+    width: 272px;
+    height: 45px;
+    font-family: 'Comic Cat';
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin-left: 45px;
+  }
+
+  /* Секции товаров */
+  .products-section {
+    padding: 30px 0;
+  }
+
+  /* Почему мы */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .why-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .why-text-block {
+    font-size: 16px;
+    color: #243221;
+    max-width: 630px;
+    margin-bottom: 28px;
+  }
+
+  .why-img {
+    width: 100%;
+    border-radius: 150px;
+    object-fit: cover;
+  }
+
+  .why-img-large {
+    width: 163px;
+    height: 163px;
+  }
+
+  .why-img-small {
+    width: 163px;
+    height: 163px;
   }
 }

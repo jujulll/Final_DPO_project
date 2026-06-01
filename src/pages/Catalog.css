@@ -113,19 +113,126 @@
 
 /* ===== Страница "Ничего не найдено" ===== */
 
+/* Адаптив */
+@media (max-width: 1200px) {
+  .catalog-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+  }
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+  }
 
-@media (max-width: 768px) {
-  .catalog-empty h2 {
-    font-size: 32px;
+  .page-title {
+    font-size: 58px;
+  }
+
+  .section-title {
+    font-size: 58px;
+  }
+
+  .breadcrumb {
+    margin-left: 20px;
+  }
+
+  .breadcrumb-back {
+    gap: 15px;
+  }
+
+  .catalog-filters {
+    gap: 20px;
+  }
+
+  .filter-btn {
+    padding: 12px 32px;
+    font-size: 18px;
   }
 }
 
-/* Адаптив */
-@media (max-width: 900px) {
+@media (max-width: 576px) {
   .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0 12px;
+  }
+
+  .catalog-empty h2 {
+    font-size: 32px;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0 12px;
+  }
+
+  .products-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .products-grid.three {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 58px;
+  }
+
+  .breadcrumb {
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumb-back {
+    gap: 15px;
+  }
+
+  .catalog-filters {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .catalog-note {
+    font-size: 16px;
+  }
+
+  .products-section {
+    padding: 20px 0 0 0;
+  }
+
+  .section-title {
+    font-family: 'Comic Cat';
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #243221;
   }
 }
