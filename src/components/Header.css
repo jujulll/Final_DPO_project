@@ -178,6 +178,29 @@
   border-bottom: 1px solid #243221;
 }
 
+/* ===== ПЛАНШЕТ (скрываем меню, показываем бургер) ===== */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .burger-btn {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .header-icons {
+    gap: 12px;
+  }
+
+  .search-box.open .search-input {
+    width: 160px;
+  }
+}
+
 /* ===== АДАПТИВ ===== */
 @media (max-width: 1200px) {
   .header {
@@ -207,7 +230,6 @@
     right: -4px;
   }
 
-  /* Поиск */
   .search-input {
     font-size: 18px;
   }
@@ -215,5 +237,4 @@
   .search-box.open .search-input {
     width: 80px;
   }
-
 }
