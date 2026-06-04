@@ -4,11 +4,34 @@ import './QuestionForm.css';
 
 function QuestionForm() {
   const [showSuccess, setShowSuccess] = useState(false);
+  const [form, setForm] = useState({ name: '', email: '' });
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: '' });
+  };
+
+  const validateName = (name) => /^[а-яА-Яa-zA-Z\s]+$/.test(name);
+  const validateEmail = (email) => email.includes('@');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShowSuccess(true);
-    e.target.reset(); // очищаем поля
+    const newErrors = {};
+
+    if (!validateName(form.name)) {
+      newErrors.name = 'Имя должно содержать только буквы';
+    }
+    if (!validateEmail(form.email)) {
+      newErrors.email = 'Email должен содержать @';
+    }
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length === 0) {
+      setShowSuccess(true);
+      setForm({ name: '', email: '' });
+    }
   };
 
   return (
@@ -22,12 +45,28 @@ function QuestionForm() {
         <form className="question-form" onSubmit={handleSubmit}>
           <div className="form-group2">
             <label>Имя и фамилия</label>
-            <input type="text" placeholder="Введите имя и фамилию" required />
+            <input 
+              type="text" 
+              name="name"
+              placeholder="Введите имя и фамилию" 
+              value={form.name}
+              onChange={handleChange}
+              required 
+            />
+            {errors.name && <span className="form-error">{errors.name}</span>}
           </div>
 
           <div className="form-group2">
             <label>Почта</label>
-            <input type="email" placeholder="Введите почту" required />
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Введите почту" 
+              value={form.email}
+              onChange={handleChange}
+              required 
+            />
+            {errors.email && <span className="form-error">{errors.email}</span>}
           </div>
 
           <button type="submit" className="question-btn">Отправить</button>

@@ -81,6 +81,13 @@
   margin: 0 auto;
 }
 
+.form-error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
 @media (max-width: 1200px) {
   .question-title {
     font-size: 58px;
